@@ -1,0 +1,31 @@
+// class date: February 15 2024
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num;
+  bool quit = false;
+  char choice;
+
+  do {
+    cout << "Enter a positive number ";
+    cin >> num;
+
+    if (num <= 0) {
+      cout << "Number must be positive; try again (Y/N): ";
+      cin >> choice;
+
+      if (choice != 'Y')
+        quit = true;
+    }
+  } while (num <= 0 && quit == false);
+
+  if (quit == false) // It needs to be improved. 
+    cout << "The sum you entered is " << num;
+  else
+    cout << "You didn't enter a positive num ";
+
+  return 0;
+}
+
+// Sentinal
