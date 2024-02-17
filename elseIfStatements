@@ -1,0 +1,24 @@
+// Class date: February 13 2024
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int testScore;
+
+  cout << "Enter a test score";
+  cin >> testScore;
+
+  if (testScore >= 90)
+    cout << "grade is an A " << endl;
+  else if (testScore >= 80)
+    cout << "grade is an B " << endl;
+  else if (testScore >= 70)
+    cout << "grade is an C " << endl;
+  else if (testScore >= 60)
+    cout << "grade is a D" << endl;
+  else
+    cout << "grade is an F " << endl;
+
+  return 0;
+}
